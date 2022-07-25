@@ -1,1 +1,20 @@
+write a recusrive Function that given an input n
+sums all the non-negative integers upto n
+          sum(0) -> 0
+          sum(1) -> 1
+          sum(4) -> (1+2+3+4)
+          sum(n) -> (1+2+3+.....+n)
 
+1) What's the simplest possible output?
+        sum(0) -> 0  (base case)
+
+2) Play around with examples and visualize:
+        n=1/2/3/4/5/6
+
+3) Relate hard cases to simpler cases:
+        can you relate sum(3) and sum(4)?
+        if we know the answer to sum(3) (where n=3), we can add 4 to sum(3) to get sum(4)
+
+4) Generalize the pattern
+
+5) write code by combining recursive pattern with the base problem
