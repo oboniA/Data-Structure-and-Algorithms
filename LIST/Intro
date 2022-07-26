@@ -1,1 +1,32 @@
+Collection: - Do not have any order, therefore can be shuffled
+            - Do not have to contain same type of objects
+            - many data structures are EXTENSION of collections
+               - so they add more rules to the ones that already apply for collections
+
+List: collection of elements (or anything)
+      - Most widely used data structure
+      - Has properties of a collection
+      - group of things
+      - but the objects have an order
+      - they are all usually related
+      - no fixed length; grow or shrink size
+      - we can keep adding at the end, remove from the middle (keep updating)
+      - sortable
+      - sequence type
+
+
+
+
+
+python has an interesting data structure called a "list" that is much more than a mere list.
+In fact, a Python list actually encompasses the functionality of almost every list-based data structure in this lesson.
+
+Behind the scenes a Python list is built as an array.
+Even though you can do many operations on a Python list with just one line of code,
+there's a lot of code built in to the Python language running to make that operation possible.
+
+For example, inserting into a list is easy (happens in constant time).
+However, inserting into an array is O(n), since you may need to shift elements to make space for the one you're inserting,
+or even copy everything to a new array if you run out of space.
+Thus, inserting into a Python list is actually O(n), while operations that search for an element at a particular spot are O(1)
 
