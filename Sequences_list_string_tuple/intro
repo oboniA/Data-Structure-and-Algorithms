@@ -1,0 +1,5 @@
+manipulation of the elements in a string or lists
+
+x = 'computer'
+
+y = ['keyboard', 'mouse', 'speaker', 'monitor']
