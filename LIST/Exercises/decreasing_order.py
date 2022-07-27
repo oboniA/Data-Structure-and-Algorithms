@@ -1,6 +1,6 @@
 """
 * write a program to find the position of a given number
-  in a list of numbers arranged in decreasing order.
+  in a list of numbers arranged in decreasing order. [sorted already]
 * We also need to minimize the number of times we access elements from the list.
 
 list : cards
