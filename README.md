@@ -16,7 +16,14 @@ Here's a systematic strategy we'll apply for solving problems:
 "Applying the right technique" is where the knowledge of common data structures and algorithms comes in handy.
 
 
+Test cases: 
+Before we start implementing our function, it would be useful to come up with some example inputs and outputs which we can use later to test out problem. We'll refer to them as test cases.
 
+
+1. decreasing_order : 20:35, 37:25, 01:09:23, 
+2.  
+3. 
+https://www.youtube.com/watch?v=pkYVOmU3MgA
 
 
 
