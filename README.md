@@ -64,28 +64,51 @@ https://www.youtube.com/watch?v=pkYVOmU3MgA
 Source: https://jovian.ai/learn/data-structures-and-algorithms-in-python/lesson/lesson-1-binary-search-linked-lists-and-complexity
 Course Contents ⭐️
 ⌨️ (00:01:43) Binary Search Linked Lists and Complexity
+
 ⌨️ (00:50:52) Complexity and Big O notation
+
 ⌨️ (01:24:57) Binary Search vs Linear Search
+
 ⌨️ (01:31:40) Generic Binary Search
+
 ⌨️ (01:50:01) Problem- Rotated Lists
+
 ⌨️ (02:33:29) Binary Search Trees Python Tutorial
+
 ⌨️ (03:13:58) Binary tree
+
 ⌨️ (03:27:16) Traversing Binary Tree
+
 ⌨️ (03:36:10) Binary Search Tree
+
 ⌨️ (04:22:37) Self-Balancing Binary Trees and AVL Trees
+
 ⌨️ (04:30:33) Hash Tables and Python Dictionaries
+
 ⌨️ (04:40:28) Data List
+
 ⌨️ (04:42:52) Hash Function
+
 ⌨️ (04:54:52) Basic Hash Table Implementation
+
 ⌨️ (05:03:07) Handling Collisions with Linear Probing
+
 ⌨️ (05:16:47) Sorting Algorithms and Divide & Conquer
+
 ⌨️ (06:40:49) Custom Comparison Functions
+
 ⌨️ (06:54:57) Recursion Memoization & Dynamic Programming
+
 ⌨️ (08:06:13) Knapsack Problems
+
 ⌨️ (08:44:05) Graph Algorithms BFS, DFS & Shortest Paths
+
 ⌨️ (08:51:00) Graph Data Structure
+
 ⌨️ (09:15:57) Graph Algorithms - Breadth-First Search
+
 ⌨️ (09:37:28) Depth-First Search
+
 ⌨️ (10:08:26) Shortest Paths
 
 ⌨️ (10:42:21) Python Interview Questions Tips & Advice
