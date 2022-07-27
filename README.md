@@ -63,6 +63,8 @@ https://www.youtube.com/watch?v=pkYVOmU3MgA
 
 Source: https://jovian.ai/learn/data-structures-and-algorithms-in-python/lesson/lesson-1-binary-search-linked-lists-and-complexity
 Course Contents ⭐️
+https://www.youtube.com/watch?v=pkYVOmU3MgA&list=PLO7b4_Ct_NMiFPHgq_WxsOZBhZ9upyQSA&index=12&t=4780s
+
 ⌨️ (00:01:43) Binary Search Linked Lists and Complexity
 
 ⌨️ (00:50:52) Complexity and Big O notation
