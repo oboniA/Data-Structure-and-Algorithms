@@ -16,6 +16,7 @@ Binary Search:
    - removes invalid section after comparing
    - starts comparison with the remaining
    - mid = ( low + high ) / 2
+   - use while loop
 Source: https://www.youtube.com/watch?v=sSYQ1H9-Vks
 
 The binary search version is over 55,000 times faster than the linear search version.
