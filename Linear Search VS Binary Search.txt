@@ -1,1 +1,20 @@
+Linear Search:
+1. both SORTED as well as UN-SORTED array
+   - starts checking from index0, and move forward
+2. Time complexity is linear. O(n)
+3. Sequencial assesment
+   - assesses starting from index0 and goes up in order till the result is found
 
+Binary Search: 
+1. only SORTED arrays
+   - take the middle index, and compare with it
+   - discard the side that is not valid
+2. Time complexity is O(log n)
+   - descarding elements after comparison (invalid ones)
+3. Random assessment 
+   - chooses mid element that is depended on the highest and lowest index. 
+   - removes invalid section after comparing
+   - starts comparison with the remaining
+   - mid = ( low + high ) / 2
+
+Source: https://www.youtube.com/watch?v=sSYQ1H9-Vks
