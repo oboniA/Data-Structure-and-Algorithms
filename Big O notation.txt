@@ -20,6 +20,7 @@ if the complexity of the algorithm is cN^3 + dN^2 + eN + f, in the Big O notatio
 
 Thus, the time complexity of linear search is O(N) and its space complexity is O(1).
 
-Sourse: https://jovian.ai/learn/data-structures-and-algorithms-in-python/lesson/lesson-1-binary-search-linked-lists-and-complexity
+Sourse: https://jovian.ai/learn/data-structures-and-algorithms-in-python/lesson/lesson-1-binary-search-linked-lists-and-complexity  || 
+https://www.youtube.com/watch?v=pkYVOmU3MgA&t=3052s
 
   
