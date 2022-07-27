@@ -16,5 +16,19 @@ Binary Search:
    - removes invalid section after comparing
    - starts comparison with the remaining
    - mid = ( low + high ) / 2
-
 Source: https://www.youtube.com/watch?v=sSYQ1H9-Vks
+
+The binary search version is over 55,000 times faster than the linear search version.
+As the size of the input grows larger, the difference only gets bigger. For a list 10 times, the size, linear search would run for 10 times longer, whereas binary search would only require 3 additional operations! (can you verify this?) That's the real difference between the complexities O(N) and O(log N).
+
+Generic Binary Search
+General strategy behind binary search, which is applicable to a variety of problems:
+
+1. Come up with a condition to determine whether the answer lies before, after or at a  given position
+2. Retrieve the midpoint and the middle element of the list.
+3. If it is the answer, return the middle position as the answer.
+4. If answer lies before it, repeat the search with the first half of the list
+5. If the answer lies after it, repeat the search with the second half of the list.
+
+The worst-case complexity or running time of binary search is O(log N), provided the complexity of the condition used to determine whether the answer lies before, after or at a given position is O(1).
+Source: https://jovian.ai/learn/data-structures-and-algorithms-in-python/lesson/lesson-1-binary-search-linked-lists-and-complexity
