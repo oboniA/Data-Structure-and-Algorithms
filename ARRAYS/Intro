@@ -1,1 +1,55 @@
+What are Arrays?
+- linear Data structure
+- collects elements of the SAME data type
+- stores them adjacent memory locations
+- arranged sequencialy
 
+Types of Arrays:
+1. One DImentional Array ( 1-D array)
+    - 1 subscript to specify elements in the array
+    - single row, n columns
+2. Multi-dimentional arays
+     1. Two dimentional array (2-D array)
+        - 2 subscripts
+        - organized in a form of matrix;
+        - collection of rows and columns (n rows; m columns)
+     2. Three dimentional array (2-D array)
+        - collection of 2D arrays
+        - consists of 3 subscripts: block size, row size, column size
+
+Operations on Array Elelemnts:
+- Traversal
+  -- process of visiting each element once
+  -- counts the array elements
+  -- prints the stored values
+  -- Sum of the elements
+- Insertion
+  -- include one or more elements in the array
+     --- at the beginning
+     --- at the end
+     -- at any given index of the array
+- Deletion
+  -- removes a desired array
+     --- at the beginning
+     --- at the end
+     --- t any given index of the array
+- Searching
+  -- if a certain key is present in the array or not
+  -- algorithmic process to find a particular item in a collection of data
+- Sorting
+  -- array sorted in a user defined order; eg. numerical, alphabetical, increasing, decreasing
+  -- ascending order by default
+
+Advantages:
+- stores multiple elements of same data type
+- can be accessed randomly using index number
+- predefined memory, so no extra memory loss
+- avoid memory overflow
+- 2D arrays can represent the tabular data in an efficient way
+
+Disadvantages:
+- should always be predefined; can't add extra element at the last moment
+- static in nature; size cannot be varied after declaration (can be resized in python)
+- insertion and deletion is difficult because elements stored in continuous form
+- allocating excess memory that required may lead to memory wastage
+- 
