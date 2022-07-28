@@ -52,4 +52,5 @@ Disadvantages:
 - static in nature; size cannot be varied after declaration (can be resized in python)
 - insertion and deletion is difficult because elements stored in continuous form
 - allocating excess memory that required may lead to memory wastage
-- 
+
+Source: https://www.youtube.com/watch?v=eXFItikqw8c
