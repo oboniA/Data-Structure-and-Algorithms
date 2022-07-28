@@ -1,4 +1,9 @@
-# 1D array
-arr1 = [1, 3, 6, 8, 4, 10]
-print(arr1)     # prints the array
-print(arr1[2])  # prints index2
+""" importing array data type"""
+
+import array as arr1
+
+# a = function.module('',[])
+a = arr1.array('i',[1, 3, 67, 89, 10, 2])  # elements stored in a;
+                                           # 'i' = integer
+print(a)
+print(a[3])
