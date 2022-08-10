@@ -7,3 +7,9 @@ def insert_sort(list_a):
     return list_a
 
 print(insert_sort([7, 5, 1, 3, 9, 10, 2]))
+
+
+
+"""
+Source: https://www.youtube.com/watch?v=byHi41L9vTM&t=30s
+"""
