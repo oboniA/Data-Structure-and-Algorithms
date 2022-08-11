@@ -17,42 +17,41 @@ def merge_sort(arr):
     if len(arr) <= 1:
         return arr
     else:
-        mid = len(arr) // 2            # midpoint is half or the array length
-        left = arr[:mid]               # slicing the leftmost half
-        right = arr[mid:]              # slicing the rightmost half
+        mid = len(arr) // 2               # midpoint is half or the array length
+        left = arr[:mid]                  # slicing the leftmost half
+        right = arr[mid:]                 # slicing the rightmost half
 
-    left = merge_sort(left)            # calling the merge_sort function of left array
-    right = merge_sort(right)          # calling the merge_sort function of right array
+    merge_sort(left)                      # calling the merge_sort function of left array
+    merge_sort(right)                     # calling the merge_sort function of right array
 
-    return merge_sorted_lists(left, right)  # the called functions are returned in the STAGE1 function
+    merge_sorted_lists(left, right, arr)  # the called functions are returned in the STAGE1 function
 
 
 
 # STAGE 1
-def merge_sorted_lists(a, b):          # 2 sorted lists will be merged
-    merging_list = []                  # empty list initialized, where the both lists are merged
-    len_a = len(a)                     # length of list a
-    len_b = len(b)                     # length of list b
-    i = j = 0                          # two pointers; i for a, j for b
+def merge_sorted_lists(a, b, arr):        # 2 sorted lists will be merged
+    len_a = len(a)                        # length of list a
+    len_b = len(b)                        # length of list b
+    i = j = k = 0                         # two pointers; i for a, j for b; k is for sorted array (arr)
 
     # ---------------comparing both the list pointers and merging accordingly ----------------------
     while i < len_a and j < len_b:
-        if a[i] <= b[j]:               # if pointer at array "a" is smaller than pointer of array b
-            merging_list.append(a[i])  # add pointer of array to the merging list
-            i += 1                     # go to next iteration by incrementing i
+        if a[i] <= b[j]:                  # if pointer at array "a" is smaller than pointer of array b
+            arr[k] = a[i]                 # current pointer place at "arr" will take the current pointer of "a"
+            i += 1                        # go to next iteration by incrementing i
         else:
-            merging_list.append(b[j])  # otherwise, add pointer of array "b"
-            j += 1                     # go to next iteration by incrementing j
-
+            arr[k] = b[j]                 # otherwise, the current pointer place at "arr" will take the current pointer of "a"
+            j += 1                        # go to next iteration by incrementing j
+        k += 1                            # for both if-else, increment k
     # ---------run ONE TIME loop on each list so all the value will end up in merged list--------------
     while i < len_a:
-        merging_list.append(a[i])      # add current pointer of array "a" to the merging list
-        i += 1                         # go to next iteration by incrementing i
+        arr[k] = a[i]                     # add current pointer of array "a" to the "arr"
+        i += 1                            # go to next iteration by incrementing i
+        k += 1                            # increment k
     while j < len_b:
-        merging_list.append(b[j])      # add current pointer of array "b" to the merging list
-        j += 1                         # go to next iteration by incrementing j
-
-    return merging_list
+        arr[k] = b[j]                     # add current pointer of array "b" to the "arr"
+        j += 1                            # go to next iteration by incrementing j
+        k += 1                            # increment k
 
 
 
@@ -60,5 +59,6 @@ def merge_sorted_lists(a, b):          # 2 sorted lists will be merged
 if __name__ == '__main__':
     arr = [4, 90, 67, 1, 3, 56, 100, 73, 12, 6]
 
-    print(merge_sort(arr))             # final execution is the function of STAGE2
+    merge_sort(arr)
+    print(arr)                             # final execution is the function of STAGE2
 
