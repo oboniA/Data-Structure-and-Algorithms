@@ -1,3 +1,34 @@
+"""
+Merge sort algorithms
+1) a single sorted list formed, from 2 sorted lists {merge_sorted_lists}
+2) An UNSORTED list is divided into 2 unsorted lists(arrays), {merge_sort}
+   - "left" will take the function of "a"
+   - "right" will take the function of "b"
+   - merge_sorted_list will; be returned here
+3) the merge_sort function will be executed in the end
+"""
+
+
+
+# STAGE 2
+# recursive function
+# exit condition: when array size<=1
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        mid = len(arr) // 2            # midpoint is half or the array length
+        left = arr[:mid]               # slicing the leftmost half
+        right = arr[mid:]              # slicing the rightmost half
+
+    left = merge_sort(left)            # calling the merge_sort function of left array
+    right = merge_sort(right)          # calling the merge_sort function of right array
+
+    return merge_sorted_lists(left, right)  # the called functions are returned in the STAGE1 function
+
+
+
+# STAGE 1
 def merge_sorted_lists(a, b):          # 2 sorted lists will be merged
     merging_list = []                  # empty list initialized, where the both lists are merged
     len_a = len(a)                     # length of list a
@@ -25,9 +56,9 @@ def merge_sorted_lists(a, b):          # 2 sorted lists will be merged
 
 
 
+# FINAL STAGE
 if __name__ == '__main__':
-    a = [3, 5, 7, 11, 21]
-    b = [2, 6, 7, 9, 13, 16, 19]
+    arr = [4, 90, 67, 1, 3, 56, 100, 73, 12, 6]
 
-    print(merge_sorted_lists(a, b))
+    print(merge_sort(arr))             # final execution is the function of STAGE2
 
