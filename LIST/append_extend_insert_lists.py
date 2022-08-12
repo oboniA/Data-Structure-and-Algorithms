@@ -14,5 +14,5 @@ print(z)
 
 z1 = [2, 4, 6, 7, 8]
 z1.insert(4, ['e', 'f']) # add the elements to index4
-print(z1)
+print(z1)                # list inside list
 
