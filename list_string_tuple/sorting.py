@@ -3,8 +3,7 @@
  * returns a list in ascending order
  * returns a tuple in ascending order
 """
-
-#string
+#String
 x = 'computer'
 print(sorted(x))
 
