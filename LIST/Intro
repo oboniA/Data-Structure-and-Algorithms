@@ -1,3 +1,9 @@
+Lists are one of the most powerful data structures in python. Lists are sequenced data types.  
+In Python, an empty list is created using list() function. They are just like the arrays declared in other languages. 
+But the most powerful thing is that list need not be always homogeneous. A single list can contain strings, integers, as well as other objects. 
+Lists can also be used for implementing stacks and queues. Lists are mutable, i.e., they can be altered once declared. 
+The elements of list can be accessed using indexing and slicing operations. (source: https://www.geeksforgeeks.org/python-set-3-strings-lists-tuples-iterations/?ref=lbp )
+
 Collection: - Do not have any order, therefore can be shuffled
             - Do not have to contain same type of objects
             - many data structures are EXTENSION of collections
