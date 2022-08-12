@@ -4,6 +4,9 @@ print(x)
 x1 = []     # created an empty list
 print(x1)
 
+xx = list((1, 2, 3, 4, 5))
+print(xx)
+
 x2 = [2, 4, 6, 7, 8]
 print(x2)
 
