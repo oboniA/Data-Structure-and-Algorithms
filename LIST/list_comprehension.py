@@ -5,9 +5,5 @@ list comprehension consists of brackets containing the expression, which is exec
 newList = [ expression(element) for element in oldList if condition ]
 """
 
-list1 = []
-for i in range(5):       # outs total 5 times
-    list1.append(i*i)    # current index times current index
-print(list1)             # prints the multiple of the current index with itself, for 5 times
-
-
+list1 = [i*i for i in range(5)]
+print(list1)
