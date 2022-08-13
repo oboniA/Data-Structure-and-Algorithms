@@ -12,6 +12,7 @@ Merge sort algorithms
 
 # STAGE 2
 # recursive function
+# BEING CALLOED ARRAY BECAUSE SAME DATA TYPE
 # exit condition: when array size<=1
 def merge_sort(arr):
     if len(arr) <= 1:
