@@ -14,3 +14,9 @@ print(a[3])
 for i in range(0, len(a)):
     print(a[i], end=" ")
 print()
+
+
+# ALSO can be created like:
+list1 = [1, 3, 67, 89, 10, 2]
+aa = arr1.array('d', list1)
+print(aa)
