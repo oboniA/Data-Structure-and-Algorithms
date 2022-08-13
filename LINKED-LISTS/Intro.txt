@@ -1,5 +1,5 @@
 Linked List (single) is a simple data structure
-  - stores data in ordered manner
+  - elements are not stored at contiguous memory locations
   - sequence of elements,
     -- which links to the next element
   - can contain any type of data
@@ -12,7 +12,8 @@ Difference between an Array and Linked list:
     -- constant time O(1)
   - in linked list, have to go through each element index
     -- each position is called the Node
-    -- each node has a pointer to the next node
+       --- each node contains a data field and a reference(link) to the next node in the list.
+    -- each node is linked with a pointer
     -- linear time O(n)
     -- insertion and deletion is quick (at the beginning: before 0th index)
        --- constant time O(1)
@@ -23,4 +24,4 @@ DOUBLY LINKED LIST:
      - similar to linked list BUT
        -- links to the next element AS WELL AS the previous
 
-(SOURCE: https://www.youtube.com/watch?v=njTh_OwMljA ; https://www.youtube.com/watch?v=JlMyYuY1aXU)
+(SOURCE: https://www.youtube.com/watch?v=njTh_OwMljA ; https://www.youtube.com/watch?v=JlMyYuY1aXU, https://www.geeksforgeeks.org/data-structures/linked-list/?ref=gcse#singlyLinkedList)
