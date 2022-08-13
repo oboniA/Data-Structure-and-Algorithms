@@ -4,7 +4,9 @@
 
 x = 'Computer Science'
 
-print(x[4])        # prints index4
+print(x[::-1])    # prints in reverse
+
+print(x[4])       # prints index4
 
 print(x[3:7])      # from index2 to index6
 
