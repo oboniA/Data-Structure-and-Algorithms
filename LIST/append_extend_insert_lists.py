@@ -2,6 +2,10 @@ x = [2, 4, 6, 7, 8]   #  list created
 x.append(11)          #  11 is added to the end of the list
 print(x)
 
+xx = [2, 4, 6, 7, 8]
+xx.append((12, 13))   # thsi tuple is added to the list
+print(xx)
+
 x1 = [2, 4, 6, 7, 8]
 y1 = [90, 67]
 x1.extend(y1)
