@@ -5,7 +5,7 @@ What are Arrays?
 - arranged sequencialy
 
 Types of Arrays:
-1. One DImentional Array ( 1-D array)
+1. One Dimentional Array ( 1-D array)
     - 1 subscript to specify elements in the array
     - single row, n columns
 2. Multi-dimentional arays
