@@ -11,6 +11,6 @@ print(a)
 print(a[3])
 
 # now print the array in array/list form
-for i in range(0, 6):
+for i in range(0, len(a)):
     print(a[i], end=" ")
 print()
