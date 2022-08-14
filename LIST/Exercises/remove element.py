@@ -9,7 +9,7 @@ list1 = ['Red', 'Green',  'White', 'Black', 'Pink', 'Yellow']  # list created
 def remove_elements(list1):
   new_list = []                      # empty list where the remaining values will be stored
 
-  for i in range(0, len(list1)):     # for elements within the list range,
+  for i in range(len(list1)):        # for elements within the list range,
      if i not in (0, 4, 5):          # if the element is not index0,4,5
         new_list.append(list1[i])    # add the element to the empty list
   return new_list                    # the new list will be returned
