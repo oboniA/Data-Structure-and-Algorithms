@@ -25,14 +25,14 @@ Operations on Array Elelemnts:
   -- Sum of the elements
 - Insertion
   -- include one or more elements in the array
-     --- at the beginning
-     --- at the end
+     --- at the beginning/middle O(n)
+     --- at the end O(1)
      -- at any given index of the array
 - Deletion
   -- removes a desired array
-     --- at the beginning
-     --- at the end
-     --- t any given index of the array
+     --- at the beginning O(n)
+     --- at the end O(1)
+     --- at any given index of the array
 - Searching
   -- if a certain key is present in the array or not
   -- algorithmic process to find a particular item in a collection of data
