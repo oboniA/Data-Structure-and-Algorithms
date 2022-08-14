@@ -2,22 +2,22 @@ What are Arrays?
 - linear Data structure
 - collects elements of the SAME data type
 - stores them adjacent memory locations
-- arranged sequencialy
+- arranged sequentialy
 
 Types of Arrays:
-1. One Dimentional Array ( 1-D array)
+1. One Dimensional Array ( 1-D array)
     - 1 subscript to specify elements in the array
     - single row, n columns
-2. Multi-dimentional arays
-     1. Two dimentional array (2-D array)
+2. Multi-dimensional arrays
+     1. Two dimensional array (2-D array)
         - 2 subscripts
         - organized in a form of matrix;
         - collection of rows and columns (n rows; m columns)
-     2. Three dimentional array (2-D array)
+     2. Three dimensional array (2-D array)
         - collection of 2D arrays
         - consists of 3 subscripts: block size, row size, column size
 
-Operations on Array Elelemnts:
+Operations on Array Elements:
 - Traversal
   -- process of visiting each element once
   -- counts the array elements
@@ -25,13 +25,13 @@ Operations on Array Elelemnts:
   -- Sum of the elements
 - Insertion
   -- include one or more elements in the array
-     --- at the beginning
-     --- at the end
+     --- at the beginning/middle O(n)
+     --- at the end O(1)
      -- at any given index of the array
 - Deletion
   -- removes a desired array
-     --- at the beginning
-     --- at the end
+     --- at the beginning O(n)
+     --- at the end O(1)
      --- t any given index of the array
 - Searching
   -- if a certain key is present in the array or not
