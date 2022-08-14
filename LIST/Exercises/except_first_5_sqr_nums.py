@@ -1,3 +1,9 @@
+"""
+Write a Python program to generate and print a list except for the first 5 elements, where the values are square of numbers between 1 and 30 (both included).
+
+returns the square of the values in the list, but deletes the first 5
+"""
+
 def generate_list(n):       # of n numbers
     list1 = []              # generated an empty list
 
