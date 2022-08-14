@@ -18,6 +18,7 @@ Difference between an Array and Linked list:
     -- insertion and deletion is quick (at the beginning: before 0th index)
        --- constant time O(1)
     -- but appending takes linear time O(n)
+       --- inserting/deleting at the middle/end is O(n)
 
 
 DOUBLY LINKED LIST:
