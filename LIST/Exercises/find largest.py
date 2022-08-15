@@ -2,31 +2,30 @@
 Find The Largest Number In A List
 """
 
-'''---------------user input -------------------'''
-nList1 = int(input("how many numbers?: "))
-list1 = []
+# --------------FOR-LOOP method----------------------
 
-for n in range(nList1):
-    list1.append(int(input()))
-print(nList1)
+list1 = [3, 64, 72, 2, 4, 100, 5]
 
-'''---------------main code--------------------'''
-larg_num = list1[0]  # assigned the largest number to the first index
+def largest_num(list1):
+    max = 0              # max initiated; set to zero (since unknown yet)
 
-for n in list1:
-    if n > larg_num:
-        larg_num =  n
-print(larg_num)
-
-
-
-'''
-def max_num_in_list( list ):
-    max = list[ 0 ]
-    for a in list:
-        if a > max:
-            max = a
+    for i in list1:
+        if i > max:      # INITIALLY, if i>0,
+            max =  i     # set the max to i; now i is the new max
     return max
-print(max_num_in_list([1, 2, -8, 0]))
-'''
 
+print('Largest number in List1 is: ',largest_num(list1))
+
+
+
+# ----------------------------SORT---------------------------
+my_list = [4, 65, 76, 2, 4, 100, 7]
+my_list.sort()                         # sorted in increasing order
+print(my_list)                         # largest at the end 
+print("largest element: ", my_list[-1])
+
+
+
+# ------------------------MIN-MAX--------------------------------
+my_list2 = [4, 65, 76, 2, 4, 200, 7]
+print("largest element: ", max(my_list2))
