@@ -7,7 +7,7 @@ Find The Largest Number In A List
 list1 = [3, 64, 72, 2, 4, 100, 5]
 
 def largest_num(list1):
-    max = 0              # max initiated; set to zero (since unknown yet)
+    max = list1[0]              # max initiated; assigned to the 0th index of the list
 
     for i in list1:
         if i > max:      # INITIALLY, if i>0,
