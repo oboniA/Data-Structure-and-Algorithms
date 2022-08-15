@@ -8,8 +8,8 @@ def longer_word(name_list, n):
     new_list = []                    # new empty list created
 
     for i in name_list:              # for the elements in name_list
-        if len(i) > n:               # if the length of element is greater than n
-            new_list.append(i)       # add that element to the new list
+        if len(i) > n:               # if the length of count_element is greater than n
+            new_list.append(i)       # add that count_element to the new list
     return new_list                  # return the new list
 
 
