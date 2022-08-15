@@ -34,6 +34,7 @@ def second_largest(list1):
     for i in unique_list:                              # for the elements in the unique list,
         if i > max_val:                                # if the current item is greater than the current max
             max_val = i                                # make the current item the new max value
+    print('max value is: ', max_val)
 
     # ------------- will search for  second max now -----------------------------------------------------------------------------------------------
     second_max_val = unique_list[0]                    # initial second_max_value is assigned to the 0th index of the unique list
@@ -43,5 +44,5 @@ def second_largest(list1):
             second_max_val = i                         # make the current item the new max value
     return  second_max_val
 
-print('The Second largest value is: ', second_largest([4, 6, 7, 90, 12, 7, 4, 90, 101]))
+print(second_largest([4, 6, 7, 90, 12, 7, 4, 90, 101]))
 
