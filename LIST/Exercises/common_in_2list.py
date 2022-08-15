@@ -17,3 +17,16 @@ def common_value(list1, list2):
     return result                  # return result accordingly
 
 print(common_value(list1, list2))
+
+
+"""
+Write a Python program to get the unique values in the two lists
+as a single list
+removes the duplicates from both lists
+USES SET
+"""
+
+l1_l2_diff = list(set(list1) - set(list2))
+l2_l1_diff = list(set(list2) - set(list1))
+unique_list = l2_l1_diff + l1_l2_diff
+print(unique_list)
