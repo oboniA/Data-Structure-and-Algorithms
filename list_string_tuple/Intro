@@ -1,0 +1,44 @@
+String:
+A string is a
+      - sequence of characters that can be a combination of letters, numbers, and special characters.
+      - can be declared using single quotes, double quotes, or even triple quotes.
+The quotations are not a part of a string
+      - they define only starting and ending of the string.
+      - Square brackets can be used to access elements of the string.
+Strings are immutable
+      - they cannot be changed.
+        -- Updating or deletion of characters from a String is not allowed
+        -- new strings can be reassigned to the same name.
+      - Each element of the string can be accessed using indexing or slicing operations.
+Strings are arrays of bytes representing Unicode characters.
+      - a single character is simply a string with a length of 1
+(SOURCE: https://www.geeksforgeeks.org/python-string/?ref=lbp )
+
+
+Lists: one of the most powerful data structures in python.
+Lists are sequenced data types.
+  - just like the arrays declared in other languages
+    -- dynamically sized
+  - is a collection of things, enclosed in [ ] and separated by commas
+  - empty list is created using list() function.
+  - need not be always homogeneous.
+    -- makes it the most powerful tool in Python
+  - Lists are mutable
+    -- they can be altered once declared.
+  - A single list can contain strings, integers, as well as other objects.
+  - can also be used for implementing stacks and queues.
+  - The elements of list can be accessed using indexing and slicing operations.
+  - Complexities for Creating Lists
+    -- Time Complexity: O(1)
+    -- Space Complexity: O(n)
+(SOURCE: https://www.geeksforgeeks.org/python-lists/?ref=lbp )
+
+Tuple:
+A tuple is a sequence of immutable Python objects.
+  - Tuples are just like lists
+    --exception that tuples cannot be changed once declared.
+  - sequence of values stored in a tuple can be of any type
+  - they are indexed by integers.
+  - tuple are syntactically separated by ‘commas’.
+  - define a tuple by closing the sequence of values in parenthese
+  - usually faster than lists.
