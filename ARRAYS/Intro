@@ -1,23 +1,29 @@
+Python array module defines an object type which can compactly represent an array of basic values:
+characters, integers, floating point numbers.
+Arrays are sequence types and behave very much like lists,
+except that the type of objects stored in them is constrained.
+(source: https://www.w3resource.com/python-exercises/array/ )
+
 What are Arrays?
 - linear Data structure
 - collects elements of the SAME data type
 - stores them adjacent memory locations
-- arranged sequencialy
+- arranged sequentially
 
 Types of Arrays:
-1. One Dimentional Array ( 1-D array)
+1. One Dimensional Array ( 1-D array)
     - 1 subscript to specify elements in the array
     - single row, n columns
-2. Multi-dimentional arays
-     1. Two dimentional array (2-D array)
+2. Multi-dimensional arrays
+     1. Two dimensional array (2-D array)
         - 2 subscripts
         - organized in a form of matrix;
         - collection of rows and columns (n rows; m columns)
-     2. Three dimentional array (2-D array)
+     2. Three dimensional array (2-D array)
         - collection of 2D arrays
         - consists of 3 subscripts: block size, row size, column size
 
-Operations on Array Elelemnts:
+Operations on Array Elements:
 - Traversal
   -- process of visiting each element once
   -- counts the array elements
