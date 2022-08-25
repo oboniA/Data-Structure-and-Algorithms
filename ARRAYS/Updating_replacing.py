@@ -1,7 +1,7 @@
 import array as arr
 
 a = arr.array('i', [1, 2, 3, 1, 2, 5])
-print("Array before updation : ", end="")
+print("Array before updating : ", end="")
 for i in range(0, len(a)):
     print(a[i], end=" ")
 print()
