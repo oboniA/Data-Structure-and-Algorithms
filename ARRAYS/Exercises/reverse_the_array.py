@@ -2,7 +2,7 @@
 Write a Python program to reverse the order of the items in the array.
 """
 
-# BUILT-IN reverse() function
+# BUILT-IN reverse() function 
 from array import *
 
 a = array('i', [3, 6, 8, 10, 21, 34, 54])
