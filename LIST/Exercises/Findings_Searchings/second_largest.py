@@ -24,7 +24,7 @@ def second_largest(list1):
 
     # ---------------------------- creating the unique list first, before checking for second max-------------------------------------------------
     for i in list1:                                    # for elements in list1,
-        if i not in unique_list:                       # if count_element is not in the unique list,
+        if i not in unique_list:                       # if count_item is not in the unique list,
             unique_list.append(i)                      # add it to the list
     print(unique_list)
 

@@ -12,7 +12,7 @@ def common_value(list1, list2):
 
     for i in list1:                # for list1 elements,
         for j in list2:            # for list2 elements
-            if i == j:             # ONLY if the count_element of list1 and list2 are the same
+            if i == j:             # ONLY if the count_item of list1 and list2 are the same
                 result = True      # return True
     return result                  # return result accordingly
 

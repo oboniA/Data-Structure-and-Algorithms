@@ -5,7 +5,7 @@ print(x)             # print list after deleting index2
 x.remove(6)          # removes the 6 from list
 print(x)
 
-x.pop()              # removes the last count_element
+x.pop()              # removes the last count_item
 print(x)
 
 

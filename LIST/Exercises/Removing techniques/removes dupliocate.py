@@ -14,8 +14,8 @@ def remove_dup(nums):
     no_duplicate = []               # every number stored here will occur once
 
     for i in nums:
-        if i not in no_duplicate:   # if the current count_element is not in the list, USE not in INSTEAD OF !=
-            no_duplicate.append(i)  # add the count_element to the list
+        if i not in no_duplicate:   # if the current count_item is not in the list, USE not in INSTEAD OF !=
+            no_duplicate.append(i)  # add the count_item to the list
     return no_duplicate             # will output thr new list with no duplicates
 
 

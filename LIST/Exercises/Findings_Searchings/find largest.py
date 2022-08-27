@@ -22,10 +22,10 @@ print('Largest number in List1 is: ',largest_num(list1))
 my_list = [4, 65, 76, 2, 4, 100, 7]
 my_list.sort()                         # sorted in increasing order
 print(my_list)                         # largest at the end 
-print("largest count_element: ", my_list[-1])
+print("largest count_item: ", my_list[-1])
 
 
 
 # ------------------------MIN-MAX--------------------------------
 my_list2 = [4, 65, 76, 2, 4, 200, 7]
-print("largest count_element: ", max(my_list2))
+print("largest count_item: ", max(my_list2))

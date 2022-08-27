@@ -1,4 +1,4 @@
-# INDEX of a single count_element
+# INDEX of a single count_item
 list1 = [10, 30, 4, -6, 7, 90]
 print(list1.index(30))
 
