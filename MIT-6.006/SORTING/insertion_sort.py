@@ -1,33 +1,36 @@
 """
  -Another way of sorting an unsorted list
-  --in ascending order
+  --in ascending/descending order
+ - Every INDEX that is being sorted is a STEP in iteration
+ - The first element in the array is assumed to be sorted.
+   -- Take the second element and store it separately in key.
+ - Compare key with the first element.
+   -- If the first element is greater than key, then key is placed in front of the first element.
+ - the first two elements are sorted.
+   -- Take the third element and compare it with the elements on the left of it.
+   --Place it just behind the element smaller than it.
+     -- If there is no element smaller than it, then place it at the beginning of the array.
+ - Similarly, place every unsorted element at its correct position.
 
- - by dividing the unsorted list
-   -- into 2 sublist
-   -- a sorted and an unsorted sublist
-   -- sorted sublist is initially length of 1
-   -- rest of the items will go to unsorted list
- - when algorithm starts:
-   -- the leftmost item in unsorted list moves in the sorted list,
-   -- now in sorted list, the values are compared and swapped accordingly
- - the comparison is between the last item of sorted list and first item of unsorted list
-   -- that is after the first item of unsorted list is sent to the sorted list,
-   -- meaning last 2 items of the sorted lists are compared
-   -- makes more comparisons along the way in sorted list when required
- - NOTE: the sorted list gets bigger every iteration, and vice versa for unsorted list,
+Source: https://www.programiz.com/dsa/insertion-sort
 
-Source: https://www.youtube.com/watch?v=byHi41L9vTM&t=30s
 """
 
 
-def insert_sort(list_a):
-    for i in range(1, len(list_a)):                          # for (initial) unsorted list
-        while list_a[i-1] > list_a[i] and i > 0:             # when present item is smaller than the item to the immediate LHS (and is greater than 0)
-                                                             # list_a[i-1] = the immediate LHS item; list_a[i] = current item that needs to be sorted
-            list_a[i], list_a[i-1] = list_a[i-1], list_a[i]  # swap the value, LHS with RHS
-            i -= 1                                           # goes down the list incrementally
+def insert_sort(array1):
 
-    return list_a
+    for i_step in range(1, len(array1)):                     # for (initial) unsorted list
+        key = array1[i_step]                                 # the current item of the current step
+        j = i_step - 1                                       # the immediate previous item of i_step
+
+        # ascending order
+        while (j >= 0) and (key < array1[j]):                # when present item is smaller than the item to the immediate LHS (and is greater than 0)
+            array1[j + 1] = array1[j]                        # swap the value, RHS with LHS
+            j -= 1                                           # goes down the list incrementally
+
+        array1[j + 1] = key                                  # Place key at after the element just smaller than it
 
 
-print(insert_sort([7, 5, 1, 3, 9, 10, 2]))
+items = [7, 5, 1, 3, 9, 10, 2]
+insert_sort(items)
+print('Sorted Array in Ascending Order:', items)
