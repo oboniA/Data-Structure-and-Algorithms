@@ -21,7 +21,7 @@ def reversing(a):       # a is the array
     i = 0
     j = len(a)-1
 
-    while i < j:        # ONLY while i is less than i
+    while i < j:        # ONLY while i is less than j
         t = a[i]        # t takes the value of the i of array a
         a[i] = a[j]     # i of array a takes the value of the j of array a
         a[j] = t        # j of array a takes the value of t
