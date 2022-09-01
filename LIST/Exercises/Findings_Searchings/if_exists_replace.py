@@ -6,7 +6,6 @@ only replace the first occurrence
 """
 
 list1 = [5, 10, 15, 20, 25, 50, 20]
-count = 0
 
 for i in range(len(list1)):
     if list1[i] == 20:
