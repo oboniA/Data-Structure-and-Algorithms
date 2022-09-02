@@ -10,9 +10,9 @@ list2 = [2, 5, 6, 9, 10]
 def common_value(list1, list2):
     result = False                 # default result initiated, meaning if condition don't meet, result will be false
 
-    for i in list1:                # for list1 elements,
+    for i in list1:                # for Sqr_list elements,
         for j in list2:            # for list2 elements
-            if i == j:             # ONLY if the count_item of list1 and list2 are the same
+            if i == j:             # ONLY if the count_item of Sqr_list and list2 are the same
                 result = True      # return True
     return result                  # return result accordingly
 
