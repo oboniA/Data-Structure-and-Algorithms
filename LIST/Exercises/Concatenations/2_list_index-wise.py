@@ -12,4 +12,4 @@ list1 = ["M", "na", "i", "Ob"]
 list2 = ["y", "me", "s", "oni"]
 
 list_concat = [(i + j) for i, j in zip(list1, list2)]
-print(list_concat)
+print(list_concat)   # NOTICE: between i[0] and j[0] (and so on), there is no space
