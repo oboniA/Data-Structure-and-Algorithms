@@ -23,13 +23,13 @@ def second_largest(list1):
     unique_list = []                                   # this list is created, so if a value repeats, the repeat will be discarded
 
     # ---------------------------- creating the unique list first, before checking for second max-------------------------------------------------
-    for i in list1:                                    # for elements in list1,
+    for i in list1:                                    # for elements in Sqr_list,
         if i not in unique_list:                       # if count_item is not in the unique list,
             unique_list.append(i)                      # add it to the list
     print(unique_list)
 
     # ------------ will search for  max now -------------------------------------------------------------------------------------------------------
-    max_val = unique_list[0]                           # initial max_value is assigned to the 0th index of the unique list
+    max_val = 0                                        # initial max_value is assigned to 0
 
     for i in unique_list:                              # for the elements in the unique list,
         if i > max_val:                                # if the current item is greater than the current max
@@ -37,7 +37,7 @@ def second_largest(list1):
     print('max value is: ', max_val)
 
     # ------------- will search for  second max now -----------------------------------------------------------------------------------------------
-    second_max_val = unique_list[0]                    # initial second_max_value is assigned to the 0th index of the unique list
+    second_max_val = 0                                 # initial second_max_value is assigned to 0
 
     for i in unique_list:
         if (i > second_max_val) and (i != max_val):    # if the current item is greater than the current second max AND not equal to the max value
