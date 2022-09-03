@@ -4,7 +4,8 @@ Python program to interchange first and last elements in a list
 
 def interchange(a):
 
-    a[0], a[-1] = a[-1], a[0]
+    start, *middle, end = a
+    a = [end, *middle, start]
 
     return a
 
