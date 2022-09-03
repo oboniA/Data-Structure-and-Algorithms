@@ -10,8 +10,8 @@ def largest_num(list1):
     max = 0              # max initiated; assigned to the 0th index of the list
 
     for i in list1:
-        if i > max:      # INITIALLY, if i>0,
-            max =  i     # set the max to i; now i is the new max
+        if i > max:      # INITIALLY, if item>0,
+            max =  i     # set the max to item; now item is the new max
     return max
 
 print('Largest number in List1 is: ',largest_num(list1))
