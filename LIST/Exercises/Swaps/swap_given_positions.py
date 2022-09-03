@@ -5,11 +5,10 @@ write a program to swap the two elements in the list.
 
 def swap_position(a, pos1, pos2):
 
-    t = a[pos1]
-    a[pos1] = a[pos2]
-    a[pos2] = t
-
+    a[pos1], a[pos2] = a[pos2], a[pos1]
     return a
 
 
-print(swap_position([1, 2, 3, 4, 5], 1, 4))
+list1 = [23, 65, 19, 90]
+pos1, pos2  = 1, 3
+print(swap_position(list1, pos1-1, pos2-1))
