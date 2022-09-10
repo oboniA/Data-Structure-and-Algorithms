@@ -1,6 +1,15 @@
-list1 = ['My','Name','is', 'something']
-print('original list: ', list1)
+str1 = input("Enter the strings contained in the list: ")
+print('The entry: ',str1)
 
-item_reversed = lambda i : i[::-1]
-reversed = list(map(item_reversed, list1))
-print('after reversing: ', reversed)
+list_words = str1.split()
+print('Convert the entry to a list: ', list_words)
+
+reverse_list = []
+
+for i in list_words:
+    reverse_list.append(i[::-1])
+print(reverse_list)
+
+
+
+
