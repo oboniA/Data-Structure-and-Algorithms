@@ -17,6 +17,8 @@ def swap_position(a, pos1, pos2):
 
 
 list1 = [23, 65, 19, 90]
+list2 = ['dr','tx', 'yw', 'rt', 'qs']
 pos1, pos2  = 1, 3
 
 print(swap_position(list1, pos1-1, pos2-1))
+print(swap_position(list2, pos1-1, pos2-1))
