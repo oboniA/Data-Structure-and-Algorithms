@@ -1,3 +1,7 @@
+"""
+SOURCE: https://www.youtube.com/watch?v=cVZMah9kEjI&list=PLO7b4_Ct_NMiFPHgq_WxsOZBhZ9upyQSA&index=23
+"""
+
 def merge_sorting(arr):
     if len(arr) <= 1:
         return arr
