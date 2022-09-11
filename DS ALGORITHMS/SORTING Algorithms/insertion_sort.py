@@ -7,17 +7,10 @@
  - The first element in the array is assumed to be sorted.
    -- Take the second element and store it separately in key.
 
- - Compare key with the first element.
-   -- If the first element is greater than key, then key is placed in front of the first element.
-
- - the first two elements are sorted.
-   -- Take the third element and compare it with the elements on the left of it.
-   --Place it just behind the element smaller than it.
-     -- If there is no element smaller than it, then place it at the beginning of the array.
-
- - Similarly, place every unsorted element at its correct position.
 
 Source: https://www.programiz.com/dsa/insertion-sort
+        https://www.youtube.com/watch?v=nKzEJWbkPbQ&list=PLO7b4_Ct_NMiFPHgq_WxsOZBhZ9upyQSA&index=46
+        https://www.youtube.com/watch?v=lEA31vHiry4&list=PLO7b4_Ct_NMiFPHgq_WxsOZBhZ9upyQSA&index=45
 
 """
 
