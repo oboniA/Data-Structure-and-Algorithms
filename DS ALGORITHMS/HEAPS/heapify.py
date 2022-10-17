@@ -30,15 +30,15 @@ def max_heapify(arr, n, i):            # n = size of array, i = position
 
 
 # insertion (4)
-def insert(arr1, num):                 # array and size created again
-    n_size = len(arr1)
-    if n_size == 0:                    # if array empty
-        arr1.append(num)               # add insert the number to the array list
+def insert(arr, num):                  # array and size created again
+    n = len(arr)
+    if n == 0:                         # if array empty
+        arr.append(num)                # add insert the number to the array list
     else:                              # if not empty
-        arr1.append(num)               # add the num to array list
+        arr.append(num)                # add the num to array list
         # recursive call (from 2)      # and do the heapify so the number is placed to the correct position
-        for i in range((n_size // 2 - 1), -1, -1):
-            max_heapify(arr1, n_size, i)
+        for i in range((n // 2 - 1), -1, -1):
+            max_heapify(arr, n, i)
 
 
 # build max heap (2) : this will be called at every Method
