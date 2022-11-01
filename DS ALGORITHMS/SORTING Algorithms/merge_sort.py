@@ -1,45 +1,65 @@
 """
+  - data distributed into 2 halves
+    -- left half
+    -- right half
+  - each half are divided into further halves
+  - now merge each element by comparing with its other half
+
+
+
 SOURCE: https://www.youtube.com/watch?v=cVZMah9kEjI&list=PLO7b4_Ct_NMiFPHgq_WxsOZBhZ9upyQSA&index=23
+        https://www.youtube.com/watch?v=8G-PB-RAzdg
 """
 
+
+# Merging code (2)
 def merge_sorting(arr):
     if len(arr) <= 1:
         return arr
 
     else:
+        mid = len(arr) // 2
+        left = arr[0:mid]        # everything before the midis left array (l)
+        right = arr[mid:]        # everything after the mid is right array (r)
+        print("Left array", left, "\nright array: ", right)
 
-        left_arr = arr[:len(arr) // 2]                    # everything before the mid-point is left_arr array (l)
-        right_arr = arr[len(arr) // 2:]                   # everything after the mid-point is left_arr array (r)
+        # recursively call ;left and right array
+        # this gives the individual elements
+        merge_sorting(left)
+        merge_sorting(right)
 
-        '''----recursion----'''
-        merge_sorting(left_arr)
-        merge_sorting(right_arr)
-
-        '''----merge----'''
-        i = 0                                            # left_arr-most index of left_arr
-        j = 0                                            # left_arr-most index of right_arr
-        k = 0                                            # left_arr-most index of merged array
-        while i < len(left_arr) and j < len(right_arr):
-            if left_arr[i] < right_arr[j]:               # if value of i is less than j
-                arr[k] = left_arr[i]                     # add i to the first index of merged array
-                i += 1
+        # merge the elements in sorted order
+        i = 0                                   # index0 of left array
+        j = 0                                   # index0 of right array
+        k = 0                                   # counter for merged array
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:              # if value of i is less than j
+                arr[k] = left[i]                # add i to index0 merged array
+                i += 1                          # go to next index
             else:
-                arr[k] = right_arr[j]
-                j += 1
-            k += 1                                       # k keeps incrementing
+                arr[k] = right[j]               # add j to index0 merged array
+                j += 1                          # go to next index
 
-        ''' ---------run ONE TIME loop on each list so all the value will end up in merged list--------------'''
-        while i < len(left_arr):
-            arr[k] = left_arr[i]                        # add current pointer of array "a" to the "arr"
-            i += 1                                      # go to next iteration by incrementing i
-            k += 1                                      # increment k
+            k += 1                              # k keeps incrementing
 
-        while j < len(right_arr):
-            arr[k] = right_arr[j]                       # add current pointer of array "b" to the "arr"
-            j += 1                                      # go to next iteration by incrementing j
-            k += 1                                      # increment k
+        # if dataset is ODD, some elements might remain un-compared. In that case:
+        # iterates through remaining left array
+        while i < len(left):
+            arr[k] = left[i]                    # add remainder of left array to merged list
+            i += 1                              # increment i
+            k += 1                              # increment k
 
+        # iterates through remaining right array
+        while j < len(right):
+            arr[k] = right[j]                   # add remainder of right array to merged list
+            j += 1                              # increment j
+            k += 1                              # increment k
 
-array_test = [4, 90, 67, 1, 3, 56, 100, 73, 12, 6]
-merge_sorting(array_test)
-print(array_test)
+        print(arr)
+
+# Driver code (1)
+dataset = [14, 30, 57, 1, 21]
+print("The original dataset: ", dataset)
+
+merge_sorting(dataset)
+print("after merging: ",dataset)      # final (3)
