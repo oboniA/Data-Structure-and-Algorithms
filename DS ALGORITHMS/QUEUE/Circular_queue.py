@@ -37,3 +37,31 @@ class CircularQueue:
             self.front = (self.front + 1) % self.size  # update the front; goes to the next front
             return temp_data    # return removed value that was stored at s1.2.2
 
+    def printCQueue(self):
+        if self.front == -1:
+            print("No element in the circular queue")
+        elif self.rear >= self.front:
+            for i in range(self.front, self.rear+1):
+                print(self.queue[i], end=" ")
+            print()
+        else:
+            for i in range(self.front, self.size):
+                print(self.queue[i], end=" ")
+            for i in range(0, self.rear + 1):
+                print(self.queue[i], end=" ")
+            print()
+
+
+# Driver code (2)
+obj = CircularQueue(5)  # 5=size
+obj.enqueue(1)
+obj.enqueue(2)
+obj.enqueue(3)
+obj.enqueue(4)
+obj.enqueue(5)
+print("Initial queue")
+obj.printCQueue()
+
+obj.dequeue()
+print("After removing an element from the queue")
+obj.printCQueue()
