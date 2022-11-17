@@ -1,6 +1,9 @@
 """
-Circular incrementation : i = (i+1)%size
+    Circular incrementation : i = (i+1)%size
 
+Source: https://www.youtube.com/watch?v=KqTJ5MAUj80
+        https://www.youtube.com/watch?v=8sjFA-IX-Ww&t=389s
+        https://www.programiz.com/dsa/circular-queue
 """
 
 
