@@ -14,7 +14,6 @@ class CircularQueue:
 
     # ENQUEUE / INSERT (1.1)
     def enqueue(self, data):
-        # insert element to the queue
         if self.front == (self.rear + 1) % self.size:  # check if the queue is full
             print("Circular queue is full")
         elif self.front == -1:
@@ -24,3 +23,17 @@ class CircularQueue:
             self.rear = (self.rear + 1) % self.size  # when rear>=0, update the rear
             # if the rear reaches the end (remainder 6~0), next it would reset the queue
             self.queue[self.rear] = data  # add the data of current rear to the queue
+
+    # DEQUEUE / DELETION (1.2)
+    def dequeue(self):
+        if self.front == -1:
+            print("Empty Queue!")
+        elif self.front == self.rear:  # if NOT empty; and front=rear: ONLY 1 element in the queue
+            temp_data = self.queue[self.front]  # store the present data temporary to return it (1.2.1)
+            self.front = self.rear = -1  # set them both to -1
+            return temp_data   # return removed value that was stored at s1.2.1
+        else:                                     # if NOT empty; more than 1 element in the queue
+            temp_data = self.queue[self.front]  # store the present data temporary to return it (1.2.2)
+            self.front = (self.front + 1) % self.size  # update the front; goes to the next front
+            return temp_data    # return removed value that was stored at s1.2.2
+
