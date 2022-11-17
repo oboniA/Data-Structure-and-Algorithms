@@ -2,58 +2,72 @@
     Max Heapify
     Source: https://www.youtube.com/watch?v=CUuuBsNqMpw
             https://www.programiz.com/dsa/heap-data-structure
+            https://www.youtube.com/watch?v=lCLcQe1Wgkg
 """
-# driver code: executes all the functions (1)
-arr = []                               # the array
-n = len(arr)                           # size of the array
 
 
-# define max_heapify (3)
-def max_heapify(arr, n, i):            # n = size of array, i = position
-    largest = i                        # initiated the largest value (root)
-    left = 2 * i + 1                   # left of i
-    right = 2 * i + 2                  # right of i
+# build max_heapify (1)
+def max_heapify(arr, i):  # i = position of root of a tree/subtree
+    largest = i  # initiated the largest value (root)
+    left = 2 * i  # left of i
+    right = 2 * i + 1  # right of i
 
     # largest so far is compared with the left
-    if left < n and arr[left] > arr[i]:
-        largest = left                 # left is now the largest
+    if left < len(arr) and arr[left] > arr[i]:
+        largest = left  # set left as the root
 
     # largest so far is compared with the right
-    if right < n and arr[right] > arr[i]:
-        largest = right                # right is now the largest
+    if right < len(arr) and arr[right] > arr[i]:
+        largest = right  # set right as the root
 
-    # swap the new largest with the previous largest: swap parent with child
-    if largest != i:                   # swapping the new with the old
-        arr[i], arr[largest] = arr[largest], arr[i]
-        # recursive call (from 2)
-        max_heapify(arr, n, largest)
+    # swap the new largest with i; swap parent with child
+    if largest != i:  # if i not the largest
+        arr[i], arr[largest] = arr[largest], arr[i]  # swap i with the largest
+
+        max_heapify(arr, largest)  # recursive call (from 2)
 
 
-# insertion (4)
-def insert(arr, num):                  # array and size created again
+# insertion (2)
+def insert(arr, data):
     n = len(arr)
-    if n == 0:                         # if array empty
-        arr.append(num)                # add insert the number to the array list
-    else:                              # if not empty
-        arr.append(num)                # add the num to array list
-        # recursive call (from 2)      # and do the heapify so the number is placed to the correct position
-        for i in range((n // 2 - 1), -1, -1):
-            max_heapify(arr, n, i)
+    if n == 0:  # if array empty
+        arr.append(data)  # insert the number to the array
+    else:  # if not empty
+        arr.append(data)  # add the num to array list
+        # a = (n // 2 - 1) = first index of non-leaf root
+        # b = -1 = down to zero
+        # c = -1 = decrement by 1
+        for i in range((n // 2 - 1), -1, -1):  # recursive call (from 1)
+            max_heapify(arr, i)
 
 
-# build max heap (2) : this will be called at every Method
-for i in range(n//2-1, -1, -1):        # range starts from a, ends at b, c = value decrements by 1
-    max_heapify(arr, n, i)             # heapify func that will be called (won't exist, so need to define(4) it afterwards)
+# deletion (3)
+def deletion(arr, d_data):
+    n = len(arr)
+    i = 0
+    for i in range(n):
+        if d_data == arr[i]:  # if data is present at current index
+            break  # stop looping further
+
+    # swap data to be deleted with the very last item
+    arr[i], arr[n - 1] = arr[n - 1], arr[i]
+    # now delete the very last element/leaf
+    arr.remove(d_data)
+
+    for i in range((n//2 - 1), -1, -1):  # recursive call (from 1)
+        max_heapify(arr, i)
 
 
-# the arrays are ready to be inserted (5)
-insert(arr, 22)
-insert(arr, 37)
-insert(arr, 52)
-insert(arr, 92)
-insert(arr, 1)
-insert(arr, 12)
+# driver code: executes all the functions (4)
+a = []  # the array
 
+insert(a, 22)
+insert(a, 37)
+insert(a, 52)
+insert(a, 92)
+insert(a, 1)
+insert(a, 12)
+print("Max heap is: " + str(a))
 
-# displays (6)
-print("Max heap is: " + str(arr))
+deletion(a, 1)
+print("After deleting an element: " + str(a))
