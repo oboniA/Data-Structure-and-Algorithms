@@ -37,25 +37,25 @@ def insert(arr, data):
         # a = (n // 2 - 1) = first index of non-leaf root
         # b = -1 = down to zero
         # c = -1 = decrement by 1
-        for i in range((n // 2 - 1), -1, -1):  # recursive call (from 1)
-            max_heapify(arr, i)
+        for item in range((n // 2 - 1), -1, -1):  # recursive call (from 1)
+            max_heapify(arr, item)
 
 
 # deletion (3)
 def deletion(arr, d_data):
     n = len(arr)
-    i = 0
-    for i in range(n):
-        if d_data == arr[i]:  # if data is present at current index
+    item = 0
+    for item in range(n):
+        if d_data == arr[item]:  # if data is present at current index
             break  # stop looping further
 
     # swap data to be deleted with the very last item
-    arr[i], arr[n - 1] = arr[n - 1], arr[i]
+    arr[item], arr[n - 1] = arr[n - 1], arr[item]
     # now delete the very last element/leaf
     arr.remove(d_data)
 
-    for i in range((n//2 - 1), -1, -1):  # recursive call (from 1)
-        max_heapify(arr, i)
+    for item in range((n // 2 - 1), -1, -1):  # recursive call (from 1)
+        max_heapify(arr, item)
 
 
 # driver code: executes all the functions (4)
@@ -69,5 +69,5 @@ insert(a, 1)
 insert(a, 12)
 print("Max heap is: " + str(a))
 
-deletion(a, 1)
+deletion(a, 92)
 print("After deleting an element: " + str(a))
