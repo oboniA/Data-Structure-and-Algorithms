@@ -52,3 +52,23 @@ evnsqr = [(x * x)
           for x in range(10)
           if (x % 2 == 0)]        # Good practice
 print(evnsqr)
+
+
+
+# ------------------------------------------------
+
+num = [4, 52, 6, 17, 8, 92, 130, 11, 2, 13, 4]
+
+dd = []
+for i in num:
+    if i < 100 and i >= 20:
+        dd.append(i)
+print(dd)
+
+
+ddd = list(filter(lambda i: i < 100 and i >= 20, num))
+print(ddd)
+
+
+dddd = [i for i in num if (i < 100 and i >= 20)]
+print(dddd)
