@@ -1,7 +1,11 @@
 """
 Singly Linked List
- - Traversal of a linked list
- - no data in the list so returns empty list
+ - Traversal of a linked list (3.1)
+   -- no data in the list so returns empty list
+ - Add/Insert operation (3.2)
+   -- at the beginning O(1)
+   -- at the end O(n)
+   -- between nodes O(n)
 """
 
 

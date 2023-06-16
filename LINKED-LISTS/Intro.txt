@@ -11,7 +11,7 @@ Difference between an Array and Linked list:
   - In array, elements are indexed
     -- constant time O(1)
   - in linked list, have to go through each element index
-    -- each position is called the Node
+    -- each position is called the TreeNode
        --- each node contains a data field and a reference(link) to the next node in the list.
     -- each node is linked with a pointer
     -- linear time O(n)

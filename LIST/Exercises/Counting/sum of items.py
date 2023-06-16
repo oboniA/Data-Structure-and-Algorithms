@@ -5,11 +5,11 @@ sum all the items in a list.
 
 '''
 nList1 = int(input("How many numbers in the list?: "))
-list1 = []
+Sqr_list = []
 
 for e in range(nList1):
-    list1.append(int(input()))
-print(list1)
+    Sqr_list.append(int(input()))
+print(Sqr_list)
 '''
 
 list1 = [4 , 7, 12, 32]

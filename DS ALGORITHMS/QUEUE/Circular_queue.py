@@ -1,9 +1,6 @@
 """
-    Circular incrementation : i = (i+1)%size
+Circular incrementation : i = (i+1)%size
 
-Source: https://www.youtube.com/watch?v=KqTJ5MAUj80
-        https://www.youtube.com/watch?v=8sjFA-IX-Ww&t=389s
-        https://www.programiz.com/dsa/circular-queue
 """
 
 
@@ -44,7 +41,7 @@ class CircularQueue:
         if self.front == -1:
             print("No element in the circular queue")
         elif self.rear >= self.front:
-            for i in range(self.front, self.rear+1):
+            for i in range(self.front, self.rear + 1):
                 print(self.queue[i], end=" ")
             print()
         else:
@@ -55,16 +52,11 @@ class CircularQueue:
             print()
 
 
-# Driver code (2)
-obj = CircularQueue(5)  # 5=size
+obj = CircularQueue(5)
 obj.enqueue(1)
 obj.enqueue(2)
 obj.enqueue(3)
 obj.enqueue(4)
 obj.enqueue(5)
 print("Initial queue")
-obj.printCQueue()
-
-obj.dequeue()
-print("After removing an element from the queue")
 obj.printCQueue()

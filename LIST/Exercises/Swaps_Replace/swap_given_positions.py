@@ -10,8 +10,8 @@ def swap_position(a, pos1, pos2):
     second_element = a.pop(pos2-1)
 
     # inserting in each others positions
-    a.insert(pos1, second_element)
-    a.insert(pos2, first_element)
+    a.insert(pos1, )
+    a.insert(pos2, )
 
     return a
 
